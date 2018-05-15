@@ -1,0 +1,155 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; 
+}
+
+body {
+  box-sizing: border-box;
+  min-width: 400px; 
+font-family: 'Poppins', sans-serif;
+/* font-family: 'Arimo', sans-serif; */
+/* font-family: 'Muli', sans-serif; */
+  color: #fff;
+}
+
+.container {
+  width: 100%;
+}
+
+.banner {
+  width: 240px;
+  height: 400px;
+  backface-visibility: hidden;
+  background-image: linear-gradient(to bottom right, rgba(0, 13, 20, 0.5), rgba(0, 107, 173, 0.8)), url('img/garden.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: normal;
+  padding: 10px;
+  margin: 20px auto;
+  border: 1px solid #000;
+
+}
+
+.cosmiq {
+  margin-top: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.experience {
+  margin-top: 24px;
+}
+
+.beautiful {
+  font-weight: 300;
+  font-size: 1.7rem;
+  color: #fff;
+  text-align: center;
+  font-kerning: normal;
+  letter-spacing: 2px;
+  padding: 13px 2px;
+}
+
+.svg {
+  width: 50%;
+  height: auto;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  transition: all 2s;
+}
+
+.cls-1 {
+  stroke-dasharray: 1000;
+  animation: dash 6s linear forwards;
+}
+
+.up {
+  animation: up 1s linear 4s both;
+}
+
+.down {
+  animation: down 1s linear 6s both;
+}
+
+.button {
+  width: 95%;
+  background-color: rgba(5, 160, 255, 1);
+  opacity: 0;
+  font-family: 'Muli', sans-serif;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  margin: 19px auto;
+  cursor: pointer;
+  border-radius: 5px;
+  animation: button 1s linear 8s both;
+  transition: all 1s ease;
+}
+
+a:hover {
+  background-color: rgba(22, 207, 142, 1);
+  color: #000;
+}
+
+
+@keyframes dash { 
+  0% {  
+    fill-opacity: 0;
+    stroke-dashoffset: 1000;
+  }  
+
+  50% {  
+    fill-opacity: 0; 
+  }
+
+  100% {
+    fill-opacity:1;
+    stroke-dashoffset: 10;    
+  }
+}
+
+@keyframes up {
+  0% {  
+    opacity: 0;
+  }  
+
+  100% {
+    opacity: 1;
+    transform: translateY(-5px)  ;  
+  }
+}
+
+@keyframes down {
+  0% {  
+    opacity: 0;
+  }  
+
+  100% {
+    opacity: 1;
+    transform: translateY(5px)  ;  
+  }
+}
+
+@keyframes button {
+  0% {  
+    opacity: 0;
+  }  
+
+  100% {
+    opacity: 1;
+  }
+}
